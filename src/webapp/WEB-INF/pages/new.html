@@ -7,19 +7,19 @@
 <body>
 <form th:method="post" th:action="@{/}" th:object="${user}">
     <br>
-    <label for="name">Введите имя</label>
+    <label for="name">Enter a name</label>
     <input type="text" th:field="*{name}" id="name">
     <br>
     <br>
-    <label for="city">Введите город</label>
+    <label for="city">Enter the city</label>
     <input type="text" th:field="*{city}" id="city">
     <br>
     <br>
-    <label for="age">Введите возраст</label>
+    <label for="age">Enter the age</label>
     <input type="text" th:field="*{age}" id="age">
     <br>
     <br>
-    <input type="submit" value="Добавить">
+    <input type="submit" value="Add">
 </form>
 </body>
 </html>
