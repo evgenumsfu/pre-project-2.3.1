@@ -24,8 +24,11 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 @ComponentScan(value = "web")
 public class HibernateConfig {
 
-    @Autowired
-    private Environment env;
+    private final Environment env;
+
+    public HibernateConfig(Environment env) {
+        this.env = env;
+    }
 
     @Bean
     public DataSource DataSource() {
